@@ -2,27 +2,49 @@
 <html lang="ru"> <!--can delete -->
   <head>
   <meta charset="utf-8" name="author" content="Vladymyr Zam">
-    <meta name="discription" content="Jeep Grand Cherokee Trackhawek являеться самым быстрым джипом в мире.">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- does not work! -->
+  <meta name="discription" content="Jeep Grand Cherokee Trackhawek являеться самым быстрым джипом в мире.">
+
+<!-- надо настроить
+  <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
+  <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
+  <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
+-->
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- does not work on MAC! -->
     <title>Моя тестовая страница</title>
   <link href="styles/style.css" rel="stylesheet" type="text/css"> <!-- зачем эти два атрибута  rel  и  type, почему имеют именно такие значения? -->
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel='stylesheet' type='text/css'> <!-- shrift -->
   </head>
-  <body>
-  	<h1>Jeep GC Trackhawk</h1>
+<body>
+  	
+<header>
+    <h1>script</h1>
+</header>
 
-<u1>
+<h1>Jeep GC Trackhawk</h1>
+
+<nav>
+ <u1>
   <li>Home</li>
   <li><a href="projects1.html" title="Проэкты">Projects</a></li>
   <li><a href="pictures1.html" title="Картинки">Pictures</a></li>
   <li><a href="social1.html" title="Социальное">Social</a></li>
-</u1>
- <h2>Homepage</h2> <!--NEW Pages, soon....-->
+ </u1>
+ <form>
+    <input type="search" name="q" placeholder="Search query">
+    <input type="submit" value="Go!">
+ </form> <!--строка поиска пока не настроина и не изучена-->
 
+</nav>
 
-    <p>Welcome to my exciting homepage</p>
-    <img src="images/jgcth.jpg" alt="Моё тестовое изображение">
-    <p><strong>Trackhawk</strong> - возможность почувствовать и увидеть:</p>
+<main>
+ <h2>Homepage(Философия)</h2> <!--NEW Pages, soon....-->
+
+ <p><q cite="https://resheto.net/raznosti/841-tsitaty-o-mashinakh">Автомобиль стал частью одежды, без которой мы чувствуем себя неуверенными, неприкрытыми и незаконченными.</q>--<a href="https://ru.wikipedia.org/wiki/Маклюэн,_Маршалл"><cite>Маршал Маклюэн.</cite></a></p> <!-- цитата -->
+
+<img src="images/jgcth.jpg" alt="Моё тестовое изображение">
+<p><strong>Trackhawk</strong> - возможность почувствовать и увидеть:</p>
  
 	<ol> 
     <li>717 HP под попой</li>
@@ -34,7 +56,10 @@
  
 <p><a href="https://autoreview.ru/images/Article/1593/Article_159349_860_575.jpg"
    download="redJGCTH"> <!-- когда создам загрузочную ссылку то вставлю сюда -->
-  Скачать красавца(download)!</a></p>
+  Скачать красавца(download-надо доделать)!</a></p>
+
+</main>
+
 
 <a href="mailto:klinoktop@gmail.com">Отправить письмо VolodymyrZAM</a>
 
@@ -45,6 +70,15 @@
 <input type="text"> <!--написать какой-то текст-->
 
   <button>Сменить пользователя</button>
+
+<address>
+  <p>Page written by <a href="../authors/chris-mills/">VolodymyrZAM</a>.</p> <!--еще без ссылки(кем написана страница с ссылкой)-->
+</address>
+
+<footer>
+    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+</footer> 
+
   <script src="scripts/main.js"></script>
   </body>
 </html>
