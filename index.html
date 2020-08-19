@@ -1,105 +1,140 @@
 <!DOCTYPE html>
-<html lang="ru"> <!--can delete -->
+<html lang="ru"> 
   <head>
   <meta charset="utf-8" name="author" content="Vladymyr Zam">
   <meta name="discription" content="Jeep Grand Cherokee Trackhawek являеться самым быстрым джипом в мире.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<!-- надо настроить
+
   <meta property="og:image" content="https://developer.cdn.mozilla.net/static/img/opengraph-logo.dc4e08e2f6af.png">
   <meta property="og:description" content="This is an example page to demonstrate usage of metadata on web pages.">
   <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
--->
 
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- does not work on MAC! -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!-- icon -->
     <title>Моя тестовая страница</title>
-  <link href="styles/style.css" rel="stylesheet" type="text/css"> <!-- зачем эти два атрибута  rel  и  type, почему имеют именно такие значения? -->
+  <link href="styles/style1.css" rel="stylesheet" type="text/css"> <!-- стиль -->
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel='stylesheet' type='text/css'> <!-- shrift -->
   </head>
 <body>
   	
 <header>
-    <h1>script</h1>
+	<!-- header1 -->
+    <h1 class="fixedh1">script</h1>
+    <!-- menu -->
 <nav>
- <u1>
-  <li>Home</li>
+ <ul>
+  <li><a href="homepage1.html" title="ДомашняяСтр">Home</a></li>
   <li><a href="projects1.html" title="Проэкты">Projects</a></li>
   <li><a href="pictures1.html" title="Картинки">Pictures</a></li>
   <li><a href="social1.html" title="Социальное">Social</a></li>
- </u1>
- <form>
-    <input type="search" name="q" placeholder="Search query">
-    <input type="submit" value="Go!">
- </form> <!--строка поиска пока не настроина и не изучена-->
-</nav>
+ </ul> 
+</nav> 
+
+<!-- seach query -->
+<form class="search">
+    <input class="searchquery" type="search" name="q" placeholder="Search query">
+    <input class="searchbotton" type="submit" value="Go!">
+ </form> 
 </header>
 
-<main>
- <h2>Homepage(Философия)</h2> <!--NEW Pages, soon...-->
-
- <p><q cite="https://resheto.net/raznosti/841-tsitaty-o-mashinakh">Автомобиль стал частью одежды, без которой мы чувствуем себя неуверенными, неприкрытыми и незаконченными.</q>--<a href="https://ru.wikipedia.org/wiki/Маклюэн,_Маршалл"><cite>Маршал Маклюэн.</cite></a></p> <!-- цитата -->
-
+<main> 
+	
+<section class="section1">
+ <h2>Homepage(Философия)</h2> 
+    <!-- quote -->
+ <p><q cite="https://resheto.net/raznosti/841-tsitaty-o-mashinakh">Автомобиль стал частью одежды, без которой мы чувствуем себя неуверенными, неприкрытыми и незаконченными.</q>-<a href="https://ru.wikipedia.org/wiki/Маклюэн,_Маршалл"><cite>Маршал Маклюэн.</cite></a></p> 
+ 	<!-- video -->
 <iframe width="560" height="315" 
   src="https://www.youtube.com/embed/Q0ZnHmgQnb0" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen></iframe>
+  allowfullscreen></iframe> 
 
-<!--<video controls width="400" height="400"
-       autoplay loop muted
-       poster="poster.png">
-  <source src="rabbit320.mp4" type="video/mp4">
-  <source src="rabbit320.webm" type="video/webm">
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
-</video>-->
+</section>
 
-<!--<audio controls>
-  <source src="viper.mp3" type="audio/mp3">
-  <source src="viper.ogg" type="audio/ogg">
-  <p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
-</audio>-->
+<section class="section2">
+	<!-- section2 -->
+ <p><strong>Trackhawk</strong> - возможность почувствовать и увидеть:</p>
+ 
+  <ol> 
+    <li>717 HP под попой</li>
+ 	<li>3.4 sec - 100km/h</li>
+ 	<li>URUS в зеркале заднего вида</li>
+  </ol>
+  <!-- href to official Jeep -->
+ <p><a href="https://www.jeep-russia.ru/grand-cherokee/trackhawk" title="Jeep store" target="_blank">и все это за адекватную цену!</a></p>
+ 
+</section>
+ 
 
+<section class="section3">
+     <h2>Связанные темы</h2>
 
+      <ul>
+        <li><a href="#">Мне нравится стоять рядом с берегом моря</a></li>
+        <li><a href="#">Мне нравится стоять рядом с морем</a></li>
+        <li><a href="#">Даже на севере Англии</a></li>
+        <li><a href="#">Здесь не перестаёт дождь</a></li>
+        <li><a href="#">Лаааадно...</a></li>
+        </ul>
+</section>
 
-
+  <!-- figure img-->
 <figure>
 <img src="images/jgcth.jpg" alt="Моё тестовое изображение" title="6.4L">
 <figcaption>6.4L</figcaption>
 </figure>
 
-<p><strong>Trackhawk</strong> - возможность почувствовать и увидеть:</p>
- 
-	<ol> 
-    <li>717 HP под попой</li>
- 	  <li>3.4 sec - 100km/h</li>
- 	  <li>URUS в зеркале заднего вида</li>
-	</ol>
+<section class="section4">
+    <h2>Payment information</h2>
+    <p>
+      <label for="card">
+        <span>Card type:</span>
+      </label>
+      <select id="card" name="usercard">
+        <option value="visa">Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="amex">American Express</option>
+      </select>
+    </p>
+    <p>
+      <label for="number">
+        <span>Card number:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="tel" id="number" name="cardnumber" required pattern=[0-9]{11}>
+    </p>
+    <p>
+      <label for="date">
+        <span>Expiration date:</span>
+        <strong><abbr title="required">*</abbr></strong>
+        <em>formatted as mm/yy</em>
+      </label>
+      <input type="date" id="date" name="expiration">
+    </p>
+<p> <button type="submit">Validate the payment</button> </p>
 
-	<p><a href="https://www.jeep-russia.ru/grand-cherokee/trackhawk" title="Jeep store" target="_blank">и все это за адекватную цену!</a></p>
- 
-<p><a href="https://autoreview.ru/images/Article/1593/Article_159349_860_575.jpg"
-   download="redJGCTH"> <!-- когда создам загрузочную ссылку то вставлю сюда -->
-  Скачать красавца(download-надо доделать)!</a></p>
+</section>
+
+ <!-- map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7289.485542076279!2d30.56112409465373!3d50.42728759792133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0JHQsNGC0YzQutGW0LLRidC40L3QsC3QnNCw0YLQuA!5e0!3m2!1sru!2sua!4v1568627824843!5m2!1sru!2sua" width="700" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 </main>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7289.485542076279!2d30.56112409465373!3d50.42728759792133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf76e65d4dad%3A0x247b398f405dff8f!2z0JHQsNGC0YzQutGW0LLRidC40L3QsC3QnNCw0YLQuA!5e0!3m2!1sru!2sua!4v1568627824843!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-<a href="mailto:klinoktop@gmail.com">Отправить письмо VolodymyrZAM</a>
-
-<!--<a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&amp;subject=The%20subject%20of%20the%20email &amp;body=The%20body%20of%20the%20email">
-  Send mail with cc, bcc, subject and body
-</a>-->
-
-<input type="text"> <!--написать какой-то текст-->
-
-  <button>Сменить пользователя</button>
-
-<address>
-  <p>Page written by <a href="../authors/chris-mills/">VolodymyrZAM</a>.</p> <!--еще без ссылки(кем написана страница с ссылкой)-->
-</address>
-
 <footer>
-    <p>©Copyright 2050 by nobody. All rights reversed.</p>
+
+  <a href="mailto:klinoktop@gmail.com">Отправить письмо VolodymyrZAM</a>
+
+
+<input type="text"> 
+
+<button>Сменить пользователя</button>
+
+ <p>©Copyright 2050 by nobody. All rights reversed.</p>
+<!-- address -->
+ <address>
+  <p>Page written by <a href="../authors/chris-mills/">VolodymyrZAM</a>.</p> 
+ </address>
 </footer> 
 
   <script src="scripts/main.js"></script>
